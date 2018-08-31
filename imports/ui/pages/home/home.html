@@ -1,4 +1,10 @@
 <template name="App_home">
-  {{> hello}}
-  {{> info}}
+    <ul>
+        <li><a href="{{pathFor route='home'}}">Home</a></li>
+        {{#if currentUser}}
+            <li><a href="{{pathFor route='logout'}}" class="logout">Logout</a></li>
+        {{/if}}
+        <li><a href="{{pathFor route='register'}}">Register</a></li>
+        <li><a href="{{pathFor route='login'}}">Login</a></li>
+    </ul>
 </template>
