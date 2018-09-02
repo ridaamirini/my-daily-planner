@@ -2,8 +2,37 @@ input, label {
   display: block;
 }
 
-.form-group label {
-  font-weight: lighter;
+.form-group {
+  label {
+    font-weight: lighter;
+  }
+
+  input {
+    border-color: white !important;
+  }
+}
+
+.remember-me {
+  height: 15px;
+  max-height: 15px;
+}
+
+.register {
+  margin-top: 4.5em;
+}
+
+.btn-login {
+  float: right;
+  background-color: #2779bd;
+  color: white;
+  border-radius: 3px;
+  width: 150px;
+  transition: 0.5s;
+
+  &:hover, &:focus{
+    background-color: #333333;
+    color: white;
+  }
 }
 
 .pencil-container {

@@ -1,10 +1,14 @@
 <template name="login">
     <div class="container-fluid h-100">
-        <div class="row justify-content-center align-items-center h-100">
-            <div class="logo d-none">
-                <img src="/img/logo.svg" alt="My daily PLANNER Logo">
+        <div class="row">
+            <div class="col">
+                <div class="logo d-none">
+                    <img src="/img/logo.svg" alt="My daily PLANNER Logo">
+                </div>
+                <div class="my-line"></div>
             </div>
-            <div class="my-line"></div>
+        </div>
+        <div class="row justify-content-center align-items-center h-100">
             <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
                 <form action="">
                     <div class="form-group">
@@ -16,11 +20,25 @@
                         <input type="password" id="password" name="password" class="w-100" placeholder="Password">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-info btn-lg btn-block">Sign In</button>
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span class="label-body">Remember me</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-info btn-lg btn-block btn-login">Login</button>
                     </div>
                 </form>
+                <div class="register d-flex justify-content-center w-100">
+                    <div class="col">
+                        <span>Not registered?</span>
+                    </div>
+                    <div class="col">
+                        <a href="#">Create an account</a>
+                    </div>
+                </div>
             </div>
-            <div class="pencil-container text-center">
+            <div class="pencil-container text-center d-none">
                 <img src="/img/pencils.png" alt="Pencils">
             </div>
         </div>
