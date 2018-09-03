@@ -10,26 +10,26 @@ import '../../ui/pages/login/login.js';
 import '../../ui/pages/not-found/not-found.js';
 
 // Set up all routes in the app
-FlowRouter.route('/', {
-  name: 'App.home',
-  action() {
-    BlazeLayout.render('App_body', { main: 'App_home' });
-  },
-});
-
 FlowRouter.route('/logout', {
     action() {
         Meteor.logout(() => {
-            FlowRouter.go('/login');
+            FlowRouter.go('/');
         });
     }
 });
 
-FlowRouter.route('/login', {
+FlowRouter.route('/', {
     name: 'App.login',
     action() {
         BlazeLayout.render('App_body', { main: 'login' });
     },
+});
+
+FlowRouter.route('/home', {
+  name: 'App.home',
+  action() {
+    BlazeLayout.render('App_body', { main: 'App_home' });
+  },
 });
 
 FlowRouter.route('/register', {

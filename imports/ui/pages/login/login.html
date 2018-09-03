@@ -1,16 +1,10 @@
 <template name="login">
     <div class="container-fluid h-100">
-        <div class="row">
-            <div class="col">
-                <div class="logo d-none">
-                    <img src="/img/logo.svg" alt="My daily PLANNER Logo">
-                </div>
-                <div class="my-line"></div>
-            </div>
-        </div>
         <div class="row justify-content-center align-items-center h-100">
             <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                <form action="">
+                <img class="logo" src="/img/logo.svg" alt="My daily PLANNER Logo">
+                <div class="my-line my-line-left"></div>
+                <form>
                     <div class="form-group">
                         <label for="email">E-Mail</label>
                         <input type="email" id="email" name="email" class="w-100" placeholder="johon.doe@example.com">
@@ -28,17 +22,18 @@
                     <div class="form-group">
                         <button class="btn btn-info btn-lg btn-block btn-login">Login</button>
                     </div>
+                    <div class="register d-flex justify-content-center w-100">
+                        <div class="col">
+                            <span>Not registered?</span>
+                        </div>
+                        <div class="col">
+                            <a href="#">Create an account</a>
+                        </div>
+                    </div>
                 </form>
-                <div class="register d-flex justify-content-center w-100">
-                    <div class="col">
-                        <span>Not registered?</span>
-                    </div>
-                    <div class="col">
-                        <a href="#">Create an account</a>
-                    </div>
-                </div>
+                <div class="my-line my-line-right"></div>
             </div>
-            <div class="pencil-container text-center d-none">
+            <div class="pencil-container text-center d-none d-lg-block">
                 <img src="/img/pencils.png" alt="Pencils">
             </div>
         </div>

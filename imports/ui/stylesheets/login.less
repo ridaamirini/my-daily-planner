@@ -39,13 +39,46 @@ input, label {
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: -1;
+}
+
+.logo-row {
+  position: absolute;
+}
+
+.my-line-left {
+  background-color: black;
+  height: 5px;
+  width: 60vw;
+  border-radius: 30px;
+  border: 1px solid;
+  margin-left: -50vw;
+  margin-bottom: 10px;
 }
 
 .my-line {
+  position: absolute;
   background-color: black;
   height: 5px;
-  margin: 5px 0 10px 0;
-  width: 50%;
+  width: 60vw;
   border-radius: 30px;
   border: 1px solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.my-line-left {
+  top: -35px;
+  left: 0;
+}
+
+.my-line-right {
+  bottom: 0;
+  // right: 0; @todo fix this
+}
+
+.logo {
+  position: absolute;
+  top: -65px;
+  left: -150px;
 }
