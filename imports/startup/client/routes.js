@@ -4,6 +4,7 @@ import { Meteor } from 'meteor/meteor';
 
 // Import needed templates
 import '../../ui/layouts/body/body.js';
+import '../../ui/layouts/main/main.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/register/register.js';
 import '../../ui/pages/login/login.js';
@@ -28,7 +29,7 @@ FlowRouter.route('/', {
 FlowRouter.route('/home', {
   name: 'App.home',
   action() {
-    BlazeLayout.render('App_body', { main: 'App_home' });
+    BlazeLayout.render('App_main', { main: 'App_home' });
   },
 });
 
