@@ -1,3 +1,14 @@
 <template name="App_main">
-  {{> Template.dynamic template=main}}
+  <div class="main-layout">
+      <div class="sidebar-right">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+      </div>
+
+      <div class="content">
+          {{> Template.dynamic template=main}}
+      </div>
+  </div>
 </template>
