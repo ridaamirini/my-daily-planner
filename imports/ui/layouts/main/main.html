@@ -1,14 +1,29 @@
 <template name="App_main">
   <div class="main-layout">
-      <div class="sidebar-right">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-      </div>
+     <!-- <div class="sidebar-right">
+          <a href="#" title="Dashboard"><i class="fa fa-dashboard"></i></a>
+      </div>-->
 
       <div class="content">
-          {{> Template.dynamic template=main}}
+          <div class="navbar">
+              <div class="row">
+                  <div class="logo-brand col-md-2">
+                      <img class="logo-img" src="/img/logo.svg" alt="My daily PLANNER Logo">
+                  </div>
+                  <div class="col pl-0">
+                      <a href="#home">Home</a>
+                  </div>
+                  <div class="col ">
+                     <div class="user-panel">
+                         <a href="#news"><i class="fa fa-user-circle"></i></a>
+                     </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container-fluid main-content">
+              {{> Template.dynamic template=main}}
+          </div>
       </div>
   </div>
 </template>
