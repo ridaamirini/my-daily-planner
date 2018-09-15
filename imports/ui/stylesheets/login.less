@@ -17,7 +17,7 @@ input, label {
   max-height: 15px;
 }
 
-/*.login-container {
+.login-container {
   &:after {
     content: ' ';
     background: url('img/pencils.png') no-repeat;
@@ -28,7 +28,7 @@ input, label {
     height: 455px;
     z-index: 0;
   }
-}*/
+}
 
 .register {
   margin-top: 4.5em;
@@ -96,4 +96,41 @@ input, label {
   position: absolute;
   top: -65px;
   left: -150px;
+}
+
+#madeinlove > .fa {
+  color: #E90606;
+  margin: 0 3px;
+  font-size: 10px;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-height: 650px),
+       screen and (max-width: 1250px) {
+  .login-container {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
 }
