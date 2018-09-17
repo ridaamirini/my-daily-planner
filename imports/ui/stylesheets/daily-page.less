@@ -1,3 +1,68 @@
-.dp-headline {
-  text-transform: uppercase;
+.daily-page {
+  font-family: serif;
+
+  .dp-headline {
+    text-transform: uppercase;
+  }
+
+  .date {
+    // background-color: red;
+
+    .date-title {
+      font-family: 'Norican', cursive;
+      text-align: center;
+      color: #135dde;
+      letter-spacing: 4px;
+    }
+
+    .date-box {
+      width: 450px;
+      height: 120px;
+      overflow: hidden;
+      padding: 0;
+
+      .week {
+        border-top: 2px solid #e8e8e5;
+      }
+    }
+  }
+
+  .box-border {
+    border: 0.19em solid #b9b9b8;
+    border-radius: 5px;
+  }
+
+  hr.divider {
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
 }
+
+.circled {
+  position: relative;
+
+  &:before {
+    border-top: .25em solid #135dde;
+    border-radius: .5em;
+    content: '';
+    height: 1em;
+    left: 0;
+    position: absolute;
+    top: -.3em;
+    transform: rotate(-10deg);
+    width: 2em;
+  }
+
+  &:after {
+    border: .25em solid #135dde;
+    border-top: none;
+    border-radius: 1.5em 1em 2em 1.5em;
+    bottom: -.3em;
+    content: '';
+    left: -.3em;
+    position: absolute;
+    right: -.3em;
+    top: -.1em;
+  }
+}
+
