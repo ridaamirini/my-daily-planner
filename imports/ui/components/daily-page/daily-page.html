@@ -1,33 +1,98 @@
 <template name="dailyPage">
-  <div class="d-flex flex-row daily-page">
-      <div class="tasks">
-          <h2 class="dp-headline">Tasks</h2>
-          <div class="col">
-              Tasks
+  <div class="daily-page">
+      <div class="d-flex flex-row">
+          <div class="tasks">
+              <h2 class="dp-headline">Tasks</h2>
+              <div class="col tasks-box">
+                  <ul class="tasks-list">
+                      <li>
+                          <div class="row">
+                              <div class="col-1">
+                                  <div class="task-checkbox"></div>
+                              </div>
+                              <div class="col">
+                                  <input type="text" class="task-input">
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-1">
+                                  <div class="task-checkbox"></div>
+                              </div>
+                              <div class="col">
+                                  <input type="text" class="task-input">
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-1">
+                                  <div class="task-checkbox"></div>
+                              </div>
+                              <div class="col">
+                                  <input type="text" class="task-input">
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-1">
+                                  <div class="task-checkbox"></div>
+                              </div>
+                              <div class="col">
+                                  <input type="text" class="task-input">
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-1">
+                                  <div class="task-checkbox"></div>
+                              </div>
+                              <div class="col">
+                                  <input type="text" class="task-input">
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="row">
+                              <div class="col-1">
+                                  <div class="task-checkbox"></div>
+                              </div>
+                              <div class="col">
+                                  <input type="text" class="task-input">
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
           </div>
-      </div>
-      <div class="d-flex flex-column ml-auto">
-          <div class="date">
-              <h2 class="dp-headline">Date</h2>
-              <div class="col date-box box-border">
-                  <h1 class="date-title">20.July.2018</h1>
-                  <div class="d-flex week">
-                      <div class="p-2 flex-fill">MON</div>
-                      <div class="p-2 flex-fill"><span class="circled">TUE</span></div>
-                      <div class="p-2 flex-fill">WED</div>
-                      <div class="p-2 flex-fill">THU</div>
-                      <div class="p-2 flex-fill">FRI</div>
-                      <div class="p-2 flex-fill">SAT</div>
-                      <div class="p-2 flex-fill">SUN</div>
+          <div class="d-flex flex-column ml-auto">
+              <div class="date">
+                  <h2 class="dp-headline">Date</h2>
+                  <div class="col date-box box-border">
+                      <h1 class="date-title">20.July.2018</h1>
+                      <div class="d-flex week">
+                          <div class="p-2 flex-fill">MON</div>
+                          <div class="p-2 flex-fill"><span class="circled">TUE</span></div>
+                          <div class="p-2 flex-fill">WED</div>
+                          <div class="p-2 flex-fill">THU</div>
+                          <div class="p-2 flex-fill">FRI</div>
+                          <div class="p-2 flex-fill">SAT</div>
+                          <div class="p-2 flex-fill">SUN</div>
+                      </div>
                   </div>
               </div>
-          </div>
-          <div class="notes">
-              <h2 class="dp-headline">Notes</h2>
-              <div class="col">
-                  Notes
+              <div class="notes">
+                  <h2 class="dp-headline">Notes</h2>
+                  <textarea class="col notes-textarea box-border"></textarea>
               </div>
           </div>
+      </div>
+      <div class="d-flex flex-row section-divider">
+            <div class="divider"></div>
+            <span>be healthy</span>
       </div>
   </div>
 </template>

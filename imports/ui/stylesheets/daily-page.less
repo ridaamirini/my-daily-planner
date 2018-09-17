@@ -5,8 +5,52 @@
     text-transform: uppercase;
   }
 
+  .tasks {
+    width: 100%;
+    padding-right: 2em;
+
+    .tasks-box {
+      height: 550px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 0;
+
+      .tasks-list {
+
+        .task-checkbox {
+          height: 38px;
+          width: 38px;
+          border: 2px solid #e8e8e5;
+          border-radius: 5px;
+        }
+
+        .task-input {
+          font-family: 'Montserrat', sans-serif;
+          width: 100%;
+          border: 0;
+          outline: 0;
+          border-bottom: 2px solid #e8e8e5;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  .notes {
+
+    textarea.notes-textarea {
+      font-family: 'Montserrat', sans-serif;
+      height: 245px;
+      line-height: 25px;
+      background-image: linear-gradient(transparent, transparent 24px, #e8e8e5 0px);
+      background-size: 100% 25px;
+      resize: none;
+      padding: 5px;
+    }
+  }
+
   .date {
-    // background-color: red;
+    width: 100%;
 
     .date-title {
       font-family: 'Norican', cursive;
@@ -16,7 +60,7 @@
     }
 
     .date-box {
-      width: 450px;
+      width: 120%;
       height: 120px;
       overflow: hidden;
       padding: 0;
@@ -32,10 +76,34 @@
     border-radius: 5px;
   }
 
-  hr.divider {
-    margin-top: 2em;
-    margin-bottom: 0;
-  }
+  .section-divider {
+      .divider {
+        // position: absolute;
+        background-color: #333;
+        height: 5px;
+        width: 55vw;
+        border-radius: 30px;
+        border: 1px solid;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        left: 0;
+      }
+
+      /*&:after {
+        content: 'be healthy';
+        position: absolute;
+        font-style: italic;
+        font-size: 45px;
+        width: 40%;
+        line-height: 0;
+        left: 95vh;
+      }*/
+
+      span {
+        font-style: italic;
+        font-size: 45px;
+      }
+    }
 }
 
 .circled {
